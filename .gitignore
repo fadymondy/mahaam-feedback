@@ -1,0 +1,8 @@
+node_modules/
+dist/
+r/
+__pycache__/
+*.egg-info/
+.venv/
+vendor/
+/r/

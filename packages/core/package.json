@@ -1,0 +1,25 @@
+{
+  "name": "@mahaam/feedback-core",
+  "version": "0.1.0",
+  "description": "Framework-agnostic core of the Mahaam feedback widget: screenshot capture, element picker, console/network diagnostics and the report transport.",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/fadymondy/mahaam-feedback.git", "directory": "packages/core" },
+  "homepage": "https://mahaam.app",
+  "engines": { "node": ">=18" },
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
+  "exports": {
+    ".": {
+      "import": { "types": "./dist/esm/index.d.ts", "default": "./dist/esm/index.js" },
+      "require": { "types": "./dist/cjs/index.d.ts", "default": "./dist/cjs/index.js" }
+    }
+  },
+  "files": ["dist", "README.md"],
+  "scripts": {
+    "build": "tsc -p tsconfig.esm.json && tsc -p tsconfig.cjs.json && node scripts/pkg-types.mjs",
+    "test": "npm run build && node --test test/*.test.mjs"
+  },
+  "dependencies": { "html-to-image": "^1.11.13" },
+  "devDependencies": { "@types/node": "^20.0.0", "typescript": "^5.4.0" }
+}

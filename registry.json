@@ -1,0 +1,67 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "mahaam",
+  "homepage": "https://mahaam.app",
+  "items": [
+    {
+      "name": "feedback",
+      "type": "registry:component",
+      "title": "Feedback Reporter",
+      "description": "A \"Report a problem\" dialog that captures a screenshot, lets the user point at the broken element, and attaches console and network diagnostics before filing the report as an issue in Mahaam.",
+      "dependencies": ["@mahaam/feedback-core", "lucide-react"],
+      "registryDependencies": ["button", "dialog", "field", "input", "select", "textarea"],
+      "files": [
+        {
+          "path": "registry/react/feedback/report-dialog.tsx",
+          "type": "registry:component",
+          "target": "components/mahaam/report-dialog.tsx"
+        },
+        {
+          "path": "registry/react/feedback/feedback-launcher.tsx",
+          "type": "registry:component",
+          "target": "components/mahaam/feedback-launcher.tsx"
+        },
+        {
+          "path": "registry/react/feedback/labels.ts",
+          "type": "registry:file",
+          "target": "components/mahaam/labels.ts"
+        },
+        {
+          "path": "registry/react/feedback/index.ts",
+          "type": "registry:file",
+          "target": "components/mahaam/index.ts"
+        }
+      ]
+    },
+    {
+      "name": "feedback-vue",
+      "type": "registry:component",
+      "title": "Feedback Reporter (Vue)",
+      "description": "The Vue 3 build of the Mahaam feedback reporter, for apps on shadcn-vue.",
+      "dependencies": ["@mahaam/feedback-core", "lucide-vue-next"],
+      "registryDependencies": ["button", "dialog", "input", "label", "select", "textarea"],
+      "files": [
+        {
+          "path": "registry/vue/feedback/ReportDialog.vue",
+          "type": "registry:component",
+          "target": "components/mahaam/ReportDialog.vue"
+        },
+        {
+          "path": "registry/vue/feedback/FeedbackLauncher.vue",
+          "type": "registry:component",
+          "target": "components/mahaam/FeedbackLauncher.vue"
+        },
+        {
+          "path": "registry/vue/feedback/labels.ts",
+          "type": "registry:file",
+          "target": "components/mahaam/labels.ts"
+        },
+        {
+          "path": "registry/vue/feedback/index.ts",
+          "type": "registry:file",
+          "target": "components/mahaam/index.ts"
+        }
+      ]
+    }
+  ]
+}
