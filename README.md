@@ -27,14 +27,14 @@ instead of shipping a second copy of Radix that never quite matches.
 ## Install — React
 
 ```bash
-npx shadcn@latest add https://mahaam.app/r/feedback.json
+npx shadcn@latest add https://console.mahaam.app/r/feedback.json
 npm i @mahaam/feedback-core
 ```
 
 Or register the namespace once in `components.json` and install by name:
 
 ```json
-{ "registries": { "@mahaam": "https://mahaam.app/r/{name}.json" } }
+{ "registries": { "@mahaam": "https://console.mahaam.app/r/{name}.json" } }
 ```
 
 ```bash
@@ -57,7 +57,7 @@ The CLI installs any you're missing.
 ## Install — Vue
 
 ```bash
-npx shadcn-vue@latest add https://mahaam.app/r/feedback-vue.json
+npx shadcn-vue@latest add https://console.mahaam.app/r/feedback-vue.json
 npm i @mahaam/feedback-core
 ```
 
